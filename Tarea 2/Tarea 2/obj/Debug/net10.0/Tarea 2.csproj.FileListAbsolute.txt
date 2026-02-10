@@ -1,0 +1,14 @@
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\bin\Debug\net10.0\Tarea 2.exe
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\bin\Debug\net10.0\Tarea 2.deps.json
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\bin\Debug\net10.0\Tarea 2.runtimeconfig.json
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\bin\Debug\net10.0\Tarea 2.dll
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\bin\Debug\net10.0\Tarea 2.pdb
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\Tarea 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\Tarea 2.AssemblyInfoInputs.cache
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\Tarea 2.AssemblyInfo.cs
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\Tarea 2.csproj.CoreCompileInputs.cache
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\Tarea 2.dll
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\refint\Tarea 2.dll
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\Tarea 2.pdb
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\Tarea 2.genruntimeconfig.cache
+C:\Users\Lenny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Todos los proyectos de c#\Tarea 2\Tarea 2\obj\Debug\net10.0\ref\Tarea 2.dll

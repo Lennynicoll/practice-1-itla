@@ -175,6 +175,7 @@ while (runing)
                     Console.WriteLine("El ID no existe.");
 
                 }
+            }
                 break;
         case 6:
                     runing = false;

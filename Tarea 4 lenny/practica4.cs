@@ -1,7 +1,8 @@
-﻿//Lenny Nicoll Nuñez matricula: 2025-1878
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+﻿//Lenny Nicoll Nuñez matricula: 2025-1878
 
 public class Contact
 {

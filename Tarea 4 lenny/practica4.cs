@@ -45,7 +45,7 @@ public class AddressBook
 
     public void ShowAll()
     {
-        Console.WriteLine("\n=== LISTA DE CONTACTOS ===");
+        Console.WriteLine("\n--- LISTA DE CONTACTOS ---");
         if (contactList.Count == 0)
         {
             Console.WriteLine("La agenda está vacía actualmente.");
@@ -53,7 +53,7 @@ public class AddressBook
         }
 
         Console.WriteLine("ID | Nombre | Teléfono");
-        Console.WriteLine("----------------------------------");
+        Console.WriteLine("------------------------------");
         foreach (var c in contactList)
         {
             Console.WriteLine($"{c.Id} | {c.Name} | {c.Phone}");
@@ -141,14 +141,14 @@ class Program
 
         while (!exit)
         {
-            Console.WriteLine("\n--- MENÚ DE OPCIONES ---");
+            Console.WriteLine("\n--- MENÚ ---");
             Console.WriteLine("1. Agregar Contacto");
             Console.WriteLine("2. Ver Lista");
             Console.WriteLine("3. Buscar por ID");
             Console.WriteLine("4. Editar Contacto");
             Console.WriteLine("5. Eliminar Contacto");
             Console.WriteLine("6. Salir");
-            Console.Write("\nSeleccione una opción: ");
+            Console.Write("\nElige la opcion: ");
 
             string option = Console.ReadLine();
 
@@ -160,9 +160,9 @@ class Program
                 case "4": myAgenda.Edit(); break;
                 case "5": myAgenda.Delete(); break;
                 case "6": exit = true; break;
-                default: Console.WriteLine("Esa opción no existe, intente de nuevo."); break;
+                default: Console.WriteLine("Esa opción no existe, intente de nuevo Por favor."); break;
             }
         }
-        Console.WriteLine("\nCerrando Agenda Perrón... ¡Hasta luego!");
+        Console.WriteLine("\nCerranda la Agenda Linda... ");
     }
 }

@@ -1,8 +1,28 @@
-﻿// Lenny Nicoll Nuñez - Matrícula: 2025-1878
+// Lenny Nicoll Nuñez - Matrícula: 2025-1878
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+PatientManager hospital = new PatientManager();
+bool active = true;
+
+while (active)
+{
+    Console.WriteLine("\n1. Registrar  2. Ver  3. Buscar  4. Alta  5. Salir");
+    Console.Write("Seleccione una opción: ");
+    string op = Console.ReadLine();
+
+    switch (op)
+    {
+        case "1": hospital.AddPatient(); break;
+        case "2": hospital.ListPatients(); break;
+        case "3": hospital.SearchById(); break;
+        case "4": hospital.DischargePatient(); break;
+        case "5": active = false; break;
+        default: Console.WriteLine("Opción no válida."); break;
+    }
+}
 
 public class Patient
 {
@@ -32,19 +52,22 @@ public class PatientManager
         Console.Write("Nombre Completo: ");
         string name = Console.ReadLine();
         Console.Write("Edad: ");
-        int age = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Tipo de Sangre: ");
-        string blood = Console.ReadLine();
-        Console.Write("Diagnóstico: ");
-        string diag = Console.ReadLine();
+        if (int.TryParse(Console.ReadLine(), out int age))
+        {
+            Console.Write("Tipo de Sangre: ");
+            string blood = Console.ReadLine();
+            Console.Write("Diagnóstico: ");
+            string diag = Console.ReadLine();
 
-        patients.Add(new Patient(idCounter++, name, age, blood, diag));
-        Console.WriteLine("Paciente registrado.");
+            patients.Add(new Patient(idCounter++, name, age, blood, diag));
+            Console.WriteLine("Paciente registrado.");
+        }
+        else Console.WriteLine("Edad no válida.");
     }
 
     public void ListPatients()
     {
-        if (patients.Count == 0)
+        if (!patients.Any())
         {
             Console.WriteLine("No hay registros.");
             return;
@@ -83,32 +106,6 @@ public class PatientManager
                 Console.WriteLine("Paciente dado de alta.");
             }
             else Console.WriteLine("ID no válido.");
-        }
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        PatientManager hospital = new PatientManager();
-        bool active = true;
-
-        while (active)
-        {
-            Console.WriteLine("\n1. Registrar  2. Ver  3. Buscar  4. Alta  5. Salir");
-            Console.Write("Seleccione una opción: ");
-            string op = Console.ReadLine();
-
-            switch (op)
-            {
-                case "1": hospital.AddPatient(); break;
-                case "2": hospital.ListPatients(); break;
-                case "3": hospital.SearchById(); break;
-                case "4": hospital.DischargePatient(); break;
-                case "5": active = false; break;
-                default: Console.WriteLine("Opción no válida."); break;
-            }
         }
     }
 }

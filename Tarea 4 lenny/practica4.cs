@@ -2,7 +2,40 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-﻿//Lenny Nicoll Nuñez matricula: 2025-1878
+// Lenny Nicoll Nuñez matricula: 2025-1878
+
+AddressBook myAgenda = new AddressBook();
+bool exit = false;
+
+Console.WriteLine("Mi Agenda linda");
+Console.WriteLine("Bienvenido a tu lista de contactos POO");
+
+while (!exit)
+{
+    Console.WriteLine("\n--- MENÚ ---");
+    Console.WriteLine("1. Agregar Contacto");
+    Console.WriteLine("2. Ver Lista");
+    Console.WriteLine("3. Buscar por ID");
+    Console.WriteLine("4. Editar Contacto");
+    Console.WriteLine("5. Eliminar Contacto");
+    Console.WriteLine("6. Salir");
+    Console.Write("\nElige la opcion: ");
+
+    string option = Console.ReadLine();
+
+    switch (option)
+    {
+        case "1": myAgenda.Add(); break;
+        case "2": myAgenda.ShowAll(); break;
+        case "3": myAgenda.Search(); break;
+        case "4": myAgenda.Edit(); break;
+        case "5": myAgenda.Delete(); break;
+        case "6": exit = true; break;
+        default: Console.WriteLine("Esa opción no existe, intente de nuevo Por favor."); break;
+    }
+}
+
+Console.WriteLine("\nCerranda la Agenda Linda... ");
 
 public class Contact
 {
@@ -127,43 +160,5 @@ public class AddressBook
                 }
             }
         }
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        AddressBook myAgenda = new AddressBook();
-        bool exit = false;
-
-        Console.WriteLine("Mi Agenda linda");
-        Console.WriteLine("Bienvenido a tu lista de contactos POO");
-
-        while (!exit)
-        {
-            Console.WriteLine("\n--- MENÚ ---");
-            Console.WriteLine("1. Agregar Contacto");
-            Console.WriteLine("2. Ver Lista");
-            Console.WriteLine("3. Buscar por ID");
-            Console.WriteLine("4. Editar Contacto");
-            Console.WriteLine("5. Eliminar Contacto");
-            Console.WriteLine("6. Salir");
-            Console.Write("\nElige la opcion: ");
-
-            string option = Console.ReadLine();
-
-            switch (option)
-            {
-                case "1": myAgenda.Add(); break;
-                case "2": myAgenda.ShowAll(); break;
-                case "3": myAgenda.Search(); break;
-                case "4": myAgenda.Edit(); break;
-                case "5": myAgenda.Delete(); break;
-                case "6": exit = true; break;
-                default: Console.WriteLine("Esa opción no existe, intente de nuevo Por favor."); break;
-            }
-        }
-        Console.WriteLine("\nCerranda la Agenda Linda... ");
     }
 }
